@@ -203,7 +203,6 @@ function get_mycompany_email() {
 add_shortcode( 'mycompany-phone', 'get_mycompany_phone' );
 function get_mycompany_phone() {
 	$all_options = get_option('ubricks_options');
-	// <a href="mailto:contact@usota.ru">contact@usota.ru</a>
 	$mycompany_phone = '<a href="tel:' . $all_options['mycompany-phone'] . '">' . $all_options['mycompany-phone'] . '</a>';
 	return $mycompany_phone;
 }
